@@ -154,7 +154,7 @@ class Bot:
         import keyboard
         keyboard.press(' ')
         keyboard.release(' ')
-        self.no = "no"
+        self.no = "no" #does nothing (just for using self, not to cause error
         sleep(1.5)
 
 
