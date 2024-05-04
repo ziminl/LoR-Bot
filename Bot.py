@@ -132,21 +132,30 @@ class Bot:
                 self.window_y + self.window_height / 2,
             )
 
-    def continue_and_replay(self):
+#    def continue_and_replay(self):
+#        sleep(5)
+#        continue_btn_ratios = [
+#            (0.96, 0.91),  # Skip info
+#            (0.73854, 0.9222),  # Continue
+#        ]
+#
+#        for x_ratio, y_ratio in continue_btn_ratios:
+#            continue_btn_pos = (
+#                self.window_x + x_ratio * self.window_width,
+#                self.window_y + y_ratio * self.window_height,
+#            )
+#
+#            self.mouse_handler.click(continue_btn_pos)
+#            sleep(1.5)
+
+
+  def continue_and_replay(self):
         sleep(5)
-        continue_btn_ratios = [
-            (0.96, 0.91),  # Skip info
-            (0.73854, 0.9222),  # Continue
-        ]
+        import keyboard
+        keyboard.press(' ')
+        keyboard.release(' ')
+        sleep(1.5)
 
-        for x_ratio, y_ratio in continue_btn_ratios:
-            continue_btn_pos = (
-                self.window_x + x_ratio * self.window_width,
-                self.window_y + y_ratio * self.window_height,
-            )
-
-            self.mouse_handler.click(continue_btn_pos)
-            sleep(1.5)
 
     def is_state_playable(self) -> bool:
         if self.game_state == GameState.Hold:
