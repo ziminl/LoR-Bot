@@ -149,11 +149,12 @@ class Bot:
 #            sleep(1.5)
 
 
-  def continue_and_replay(self):
+    def continue_and_replay(self):
         sleep(5)
         import keyboard
         keyboard.press(' ')
         keyboard.release(' ')
+        self.no = "no"
         sleep(1.5)
 
 
