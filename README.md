@@ -1,6 +1,7 @@
 #install
 
-Windows Key + R\
+Windows Key + R
+
 
 
 
