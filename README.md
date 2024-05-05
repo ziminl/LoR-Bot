@@ -1,15 +1,15 @@
 #install
 
-Windows Key + R
+Windows Key + R\
 
 
 
-git clone https://github.com/ziminl/LoR-Bot
-cd LoR-Bot
-python LOR_Bot.py
+git clone https://github.com/ziminl/LoR-Bot\
+cd LoR-Bot\
+python LOR_Bot.py\
 
 
 
-Windows Key + R
-cd <dir/LoR-Bot>
-python continue.py
+Windows Key + R\
+cd <dir/LoR-Bot>\
+python continue.py\
